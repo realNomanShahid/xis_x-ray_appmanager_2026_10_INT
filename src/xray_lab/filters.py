@@ -17,7 +17,7 @@ def enhance_contrast(image: np.ndarray, clip_limit: float = 2.0, tile: int = 8) 
     return clahe.apply(gray)
 
 
-def detect_edges(image: np.ndarray, low: int = 50, high: int = 150) -> np.ndarray:
+def detect_edges(image: np.ndarray, low: int = 80, high: int = 200) -> np.ndarray:
     """Canny edge detection. Returns a binary edge map."""
     gray = to_gray(image)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
