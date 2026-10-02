@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Build outputs (never commit these; attach them to GitHub Releases instead)
+build/
+dist/
+*.exe
+*.msi
+*.spec
+
+# App output
+output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
