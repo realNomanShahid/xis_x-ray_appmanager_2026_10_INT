@@ -1,7 +1,6 @@
-# X-Ray Lab (Practice Edition)
+# X-Ray Lab 
 
 A small OpenCV project made for practising Git versioning: commits, branches, tags and GitHub Releases.
-It is not real medical software.
 
 ## Setup
 ```
