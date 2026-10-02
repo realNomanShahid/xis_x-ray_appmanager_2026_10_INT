@@ -5,10 +5,8 @@ Format based on [Keep a Changelog](https://keepachangelog.com/), versioning foll
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-10-02
+### Fixed
+- Edge detection is less sensitive.
+
 ## [1.0.0] - 2026-10-02
-### Added
-- Contrast enhancement (CLAHE) filter.
-- Edge detection (Canny) filter.
-- Bright-region detection with bounding boxes.
-- Command line interface (`python -m xray_lab`).
-- Unit tests, sample image, documentation.

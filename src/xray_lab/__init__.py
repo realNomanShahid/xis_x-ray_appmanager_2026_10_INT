@@ -2,4 +2,4 @@
 
 # Single source of truth for the version number.
 # When you make a new release, change it here AND in CHANGELOG.md, then tag it.
-__version__ = "1.0.0"
+__version__ = "1.0.1"
