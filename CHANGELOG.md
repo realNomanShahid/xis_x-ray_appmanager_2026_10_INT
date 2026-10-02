@@ -5,6 +5,12 @@ Format based on [Keep a Changelog](https://keepachangelog.com/), versioning foll
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-10-02
+
+### Changed
+- **BREAKING:** the `--mode` option was renamed to `--filter`.
+  Update your commands: `--mode blur` becomes `--filter blur`.
+
 ## [1.1.0] - 2026-10-02
 ### Added
 - Blur filter (`blur_image`) and `--mode blur` option.
