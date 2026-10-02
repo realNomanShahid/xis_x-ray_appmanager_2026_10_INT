@@ -12,7 +12,7 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--version", action="version", version=f"xray_lab {__version__}")
     p.add_argument("--input", required=True, help="path to input image")
     p.add_argument("--output", default="output/result.png", help="where to save the result")
-    p.add_argument("--mode", choices=["contrast", "edges", "detect", "blur"], default="contrast")
+    p.add_argument(""--filter"", choices=["contrast", "edges", "detect", "blur"], default="contrast")
     return p
 
 
@@ -20,11 +20,11 @@ def main(argv=None) -> int:
     args = build_parser().parse_args(argv)
     image = load_image(args.input)
 
-    if args.mode == "contrast":
+    if args.filter == "contrast":
         result = enhance_contrast(image)
-    elif args.mode == "edges":
+    elif args.filter == "edges":
         result = detect_edges(image)
-    elif args.mode == "blur":
+    elif args.filter == "blur":
         result = blur_image(image)
     else:
         boxes = find_bright_regions(image)

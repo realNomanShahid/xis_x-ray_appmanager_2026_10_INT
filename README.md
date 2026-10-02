@@ -16,9 +16,9 @@ Windows PowerShell:
 ```
 $env:PYTHONPATH="src"
 python -m xray_lab --version
-python -m xray_lab --input assets/sample_xray.png --mode contrast
-python -m xray_lab --input assets/sample_xray.png --mode edges --output output/edges.png
-python -m xray_lab --input assets/sample_xray.png --mode detect --output output/boxes.png
+python -m xray_lab --input assets/sample_xray.png --filter contrast
+python -m xray_lab --input assets/sample_xray.png --filter edges --output output/edges.png
+python -m xray_lab --input assets/sample_xray.png --filter detect --output output/boxes.png
 ```
 Mac/Linux: use `PYTHONPATH=src python -m xray_lab ...`
 
